@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Pagina inicial</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -21,12 +21,12 @@
                         <div class="menu-list">
                             <ul id="menu-content" class="menu-content collapse out">
                                 <li>
-                                    <a href="#">
-                                        <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                                    <a href="#pagina.html">
+                                        <i class="fa fa-dashboard fa-lg"></i> Inicio
                                     </a>
                                 </li>
                                 <li data-toggle="collapse" data-target="#new" class="collapsed">
-                                    <a href="#"><i class="fa fa-car fa-lg"></i> New <span class="arrow"></span></a>
+                                    <a href="#"><i class="fa fa-car fa-lg"></i> Novo <span class="arrow"></span></a>
                                 </li>
                                 <ul class="sub-menu collapse" id="new">
                                     <li>New New 1</li>
@@ -37,13 +37,19 @@
                 </div>
                 
                 <div class="col-sm-9 col-sm-offset-1">
-                    <h1>Welcome To Dashboard Panel :)</h1>
+                    <h1>Lista</h1>
                     <p>
-                        this  is test text.this  is test text.this  is test text.this  is test text.
-                        this  is test text.this  is test text.this  is test text.this  is test text.
-                        this  is test text.this  is test text.this  is test text.this  is test text.
-                        this  is test text.this  is test text.this  is test text.this  is test text.
-                        this  is test text.this  is test text.
+                        
+                        <label class="col-md-3">Nome: </label>
+                        <input class="col-md-9" type="text" name="nome" placeholder="Digite o nome do produto"><br/><br/>                        
+                        <label class="col-md-3">Descrição: </label>
+                        <input class="col-md-9" type="text" name="descricao" placeholder="Digite o descrição do produto"><br/><br/>
+                        <label class="col-md-3">Valor: </label>
+                        <input class="col-md-9" type="valor" name="valor" placeholder="Digite o valor do produto"><br/><br/>
+                        <label class="col-md-3">Quantidade:</label> 
+                        <input class="col-md-9" type="text" name= "quantidade" placeholder="Digite a quantidade"><br/><br/>
+                        <button type="submit" name="Cadastrar">Cadastrar</button>
+                        
                     </p>
                 </div>
             </div>
