@@ -17,14 +17,13 @@
     <body>
         <nav id="mainNav">
             <ul>
-                <li><a href="#"><i class="icon-home"></i><br />Home</a></li>
+                <li><a href="index.jsp"><i class="icon-home"></i><br />Home</a></li>
 
                 <li><a href="#"><i class="icon-cog"></i><br />Cadastro</a>
                     <ul class="sub-menu">
-                        <li><a href="user.jsp"><i class="icon-plane"></i>Cliente</a></li>
-
-                        <li><a href=""><i class="icon-book"></i> Print</a></li>
-                        <li><a href="#"><i class="icon-facetime-video"></i> Video</a></li>
+                        <li><a href="user.jsp">Cliente</a></li>
+                        <li><a href="listUser.jsp">Listar</a></li>
+                        <li><a href="edit.jsp">Alterar</a></li>
                     </ul>
                 </li>
 
@@ -44,7 +43,8 @@
                     </ul>
                 </li>
 
-                <li><a href="#"><i class="icon-twitter"></i><br />Contact</a></li>
+                <li><a href="#"><br />Sair</a></li>
+                
             </ul><div class="clr"></div>
         </nav> 
     </body>

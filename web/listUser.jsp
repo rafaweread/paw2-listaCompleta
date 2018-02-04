@@ -15,7 +15,7 @@
     <body>
         <nav id="mainNav">
             <ul>
-                <li><a href="#"><i class="icon-home"></i><br />Home</a></li>
+                <li><a href="index.jsp"><i class="icon-home"></i><br />Home</a></li>
 
                 <li><a href="#"><i class="icon-cog"></i><br />Cadastro</a>
                     <ul class="sub-menu">

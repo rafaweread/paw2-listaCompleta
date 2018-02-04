@@ -16,7 +16,10 @@
         <title>JSP Page</title>
     </head>
     <body>
-
+        <%
+        
+        
+        %>
 
         <div class="container">
             <div class="login col-md-3 col-xs-11">
@@ -26,19 +29,22 @@
                     </div>
                     <div class="login-content col-xs-12">
                         
-                        <form class="" action="index.jsp" method="post">
+                        <form class="" action="Logar" method="post">
+                            
                             <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
-                                    <input type="text" class="form-control" id="username" placeholder="Nome do Usuário">
+                                    <input type="text" name="USUARIO" class="form-control" placeholder="Nome do Usuário">
                                 </div>
                             </div>
+                            
                             <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></div>
-                                    <input type="password" class="form-control" id="password" placeholder="Senha">
+                                    <input type="password" name="SENHA" class="form-control" placeholder="Senha">
                                 </div>
                             </div>
+                            
                             <div class="form-group text-center">
                                 <button class="btn btn-primary btn-block fa fa-paper-plane" type="submit" name="button">Acessar</button>
                             </div>
