@@ -2,99 +2,93 @@ package model;
 
 public class UserBean {
 
-    private int id;
-    private String fName;
-    private String lName;
-    private String telephone;
-    private String birthDate;
-    private String city;
-    private String state;
-    private String dateRecord;
-    private String dateReservation;
-    private String dailyQuantity;
-    private String peapleQuantity;
+    private int Id;
+    private String nome;
+    private String cpf;
+    private String telefone;
+    private String datanascimento;
+    private String cidade;
+    private String estado;
+    private String diarias;     
+    private String quantidadepessoas;
 
-    
-    public String getDateRecord() {
-        return dateRecord;
-    }
-
-    public void setDateRecord(String dateRecord) {
-        this.dateRecord = dateRecord;
-    }
-
-    public String getDateReservation() {
-        return dateReservation;
-    }
-
-    public void setDateReservation(String dateReservation) {
-        this.dateReservation = dateReservation;
-    }
-
-    public String getDailyQuantity() {
-        return dailyQuantity;
-    }
-
-    public void setDailyQuantity(String dailyQuantity) {
-        this.dailyQuantity = dailyQuantity;
-    }
-
-    public String getPeapleQuantity() {
-        return peapleQuantity;
-    }
-
-    public void setPeapleQuantity(String peapleQuantity) {
-        this.peapleQuantity = peapleQuantity;
-    }
-    
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
-    public String getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(String birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getState() {
-        return state;
-    }
-
-    public void setState(String state) {
-        this.state = state;
-    }
-    
     public int getId() {
-            return id;
+        return Id;
     }
-    public void setId(int id) {
-            this.id = id;
+
+    public void setId(int Id) {
+        this.Id = Id;
     }
-    public String getfName() {
-            return fName;
+
+    
+
+    public String getNome() {
+        return nome;
     }
-    public void setfName(String fName) {
-            this.fName = fName;
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
-    public String getlName() {
-            return lName;
+
+    public String getCpf() {
+        return cpf;
     }
-    public void setlName(String lName) {
-            this.lName = lName;
-    }	
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public String getDatanascimento() {
+        return datanascimento;
+    }
+
+    public void setDatanascimento(String datanascimento) {
+        this.datanascimento = datanascimento;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getDiarias() {
+        return diarias;
+    }
+
+    public void setDiarias(String diarias) {
+        this.diarias = diarias;
+    }
+
+    public String getQuantidadepessoas() {
+        return quantidadepessoas;
+    }
+
+    public void setQuantidadepessoas(String quantidadepessoas) {
+        this.quantidadepessoas = quantidadepessoas;
+    }
+
+    
+
 }
+    
+
+   

@@ -19,9 +19,9 @@
             <ul>
                 <li><a href="#"><i class="icon-home"></i><br />Home</a></li>
 
-                <li><a href="#"><i class="icon-cog"></i><br />Services</a>
+                <li><a href="#"><i class="icon-cog"></i><br />Cadastro</a>
                     <ul class="sub-menu">
-                        <li><a href="lider/user.jsp"><i class="icon-plane"></i> Web</a></li>
+                        <li><a href="user.jsp"><i class="icon-plane"></i>Cliente</a></li>
 
                         <li><a href=""><i class="icon-book"></i> Print</a></li>
                         <li><a href="#"><i class="icon-facetime-video"></i> Video</a></li>
