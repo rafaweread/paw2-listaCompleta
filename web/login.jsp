@@ -1,9 +1,3 @@
-<%-- 
-    Document   : login
-    Created on : 30/01/2018, 21:26:34
-    Author     : Rafael
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -16,11 +10,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <%
-        
-        
-        %>
-
+       
         <div class="container">
             <div class="login col-md-3 col-xs-11">
                 <div class="row">

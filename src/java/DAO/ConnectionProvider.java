@@ -16,11 +16,16 @@ public class ConnectionProvider {
             try {
                 
                 String driver = "com.mysql.jdbc.Driver";
-                String url = "jdbc:mysql://localhost:3306/db_homologacao";
-                String user = "root";
-                String password = "abacoaba";
+                
+                String url = "jdbc:mysql://localhost:3306/devStrong";
+                
+                String user = "devStrong";
+                String password = "m7WFP348";
+                
                 Class.forName(driver);
+                
                 con = DriverManager.getConnection(url, user, password);
+                
             } catch (ClassNotFoundException cnfe) {
                 System.out.println(cnfe);
             } catch (SQLException sqe) {

@@ -7,7 +7,7 @@
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link href="css/index.css" rel="stylesheet" type="text/css"/>
-        <title>Add New User</title>
+        <title>Cadastro de Cliente</title>
     </head>
     <body>
         <nav id="mainNav">
