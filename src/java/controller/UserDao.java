@@ -20,7 +20,7 @@ public class UserDao {
 
     public void addUser(UserBean userBean) {
         try {
-            String sql = "INSERT INTO users(userid,firstname,lastname,telephone,birthdate,city,state,daterecord,datereservation,dailyquantity,peaplequantity)" + " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            String sql = "INSERT INTO users(userid,firstname,lastname,telephone,birthdate,city,state)" + " VALUES (?, ?, ?, ?, ?, ?, ?)";
             PreparedStatement ps = conn.prepareStatement(sql);
 
             ps.setInt(1, userBean.getId());
@@ -30,10 +30,10 @@ public class UserDao {
             ps.setString(5, userBean.getBirthDate());
             ps.setString(6, userBean.getCity());
             ps.setString(7, userBean.getState());
-            ps.setString(8, userBean.getDateRecord());
-            ps.setString(9, userBean.getDateReservation());
-            ps.setString(10, userBean.getDailyQuantity());
-            ps.setString(11, userBean.getPeapleQuantity());
+//            ps.setString(8, userBean.getDateRecord());
+//            ps.setString(9, userBean.getDateReservation());
+//            ps.setString(10, userBean.getDailyQuantity());
+//            ps.setString(11, userBean.getPeapleQuantity());
 
             ps.executeUpdate();
 
@@ -56,7 +56,7 @@ public class UserDao {
 
     public void editUser(UserBean userBean) {
         try {
-            String sql = "UPDATE users SET firstname=?, lastname=?, telephone=?, birthdate=?, city=?, state=?, daterecord=?, datereservation=?, dailyquantity=?, peaplequantity=?" + " WHERE userid=?";
+            String sql = "UPDATE users SET firstname=?, lastname=?, telephone=?, birthdate=?, city=?, state=?" + " WHERE userid=?";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, userBean.getfName());
             ps.setString(2, userBean.getlName());
@@ -65,10 +65,10 @@ public class UserDao {
             ps.setString(4, userBean.getBirthDate());
             ps.setString(5, userBean.getCity());
             ps.setString(6, userBean.getState());
-            ps.setString(7, userBean.getDateRecord());
-            ps.setString(8, userBean.getDateReservation());
-            ps.setString(9, userBean.getDailyQuantity());
-            ps.setString(10, userBean.getPeapleQuantity());
+//            ps.setString(7, userBean.getDateRecord());
+//            ps.setString(8, userBean.getDateReservation());
+//            ps.setString(9, userBean.getDailyQuantity());
+//            ps.setString(10, userBean.getPeapleQuantity());
             ps.executeUpdate();
 
         } catch (SQLException e) {
@@ -121,10 +121,10 @@ public class UserDao {
                 userBean.setBirthDate(rs.getString("birthdate"));
                 userBean.setCity(rs.getString("city"));
                 userBean.setState(rs.getString("state"));
-                userBean.setDateRecord(rs.getString("daterecord"));
-                userBean.setDateReservation(rs.getString("datereservation"));
-                userBean.setDailyQuantity(rs.getString("dailyquantity"));
-                userBean.setPeapleQuantity(rs.getString("peaplequantity"));
+//                userBean.setDateRecord(rs.getString("daterecord"));
+//                userBean.setDateReservation(rs.getString("datereservation"));
+//                userBean.setDailyQuantity(rs.getString("dailyquantity"));
+//                userBean.setPeapleQuantity(rs.getString("peaplequantity"));
             }
         } catch (SQLException e) {
             e.printStackTrace();

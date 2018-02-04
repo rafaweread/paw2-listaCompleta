@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import controller.UserDao;
+//import javax.servlet.annotation.WebServlet;
 import model.UserBean;
 
+//@WebServlet(name = "UserHandler", urlPatterns = {"/UserHandler"})
 public class UserHandler extends HttpServlet {
 
     private static String INSERT = "/lider/user.jsp";
@@ -40,10 +42,10 @@ public class UserHandler extends HttpServlet {
             user.setBirthDate(request.getParameter("birthdate"));
             user.setCity(request.getParameter("city"));
             user.setState(request.getParameter("state"));
-            user.setDateRecord(request.getParameter("daterecord"));
-            user.setDateReservation(request.getParameter("datereservation"));
-            user.setDailyQuantity(request.getParameter("dailyquantity"));
-            user.setPeapleQuantity(request.getParameter("peaplequantity"));
+//            user.setDateRecord(request.getParameter("daterecord"));
+//            user.setDateReservation(request.getParameter("datereservation"));
+//            user.setDailyQuantity(request.getParameter("dailyquantity"));
+//            user.setPeapleQuantity(request.getParameter("peaplequantity"));
             
             dao.addUser(user);
             redirect = UserRecord;
@@ -72,10 +74,10 @@ public class UserHandler extends HttpServlet {
             user.setBirthDate(request.getParameter("birthdate"));
             user.setCity(request.getParameter("city"));
             user.setState(request.getParameter("state"));
-            user.setDateRecord(request.getParameter("daterecord"));
-            user.setDateReservation(request.getParameter("datereservation"));
-            user.setDailyQuantity(request.getParameter("dailyquantity"));
-            user.setPeapleQuantity(request.getParameter("peaplequantity"));
+//            user.setDateRecord(request.getParameter("daterecord"));
+//            user.setDateReservation(request.getParameter("datereservation"));
+//            user.setDailyQuantity(request.getParameter("dailyquantity"));
+//            user.setPeapleQuantity(request.getParameter("peaplequantity"));
             dao.editUser(user);
             request.setAttribute("user", user);
             redirect = UserRecord;

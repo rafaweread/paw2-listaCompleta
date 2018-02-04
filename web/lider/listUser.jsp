@@ -11,10 +11,10 @@
     </head>
     <body>
         <%
-        //UserBean user = new UserBean();
+            //UserBean user = new UserBean();
             UserDao dao = new UserDao();
             List<UserBean> userList = dao.getAllUsers();
-        //Iterator<UserBean> itr = userList.iterator();
+            //Iterator<UserBean> itr = userList.iterator();
         %>
         <table border="1">
             <tr>
@@ -25,11 +25,11 @@
                 <th>Birthdate</th>
                 <th>City</th>
                 <th>State</th>
-                <th>Date record</th>
+<!--                <th>Date record</th>
                 <th>Date reservation</th>
                 <th>Daily quantity</th>
-                <th>People quantity</th>
-                
+                <th>People quantity</th>-->
+
             </tr>
             <tr>
                 <%
@@ -45,20 +45,20 @@
                 <td><%=user.getBirthDate()%></td>
                 <td><%=user.getCity()%></td>
                 <td><%=user.getState()%></td>
-                <td><%=user.getDateRecord()%></td>
+<!--                <td><%=user.getDateRecord()%></td>
                 <td><%=user.getDateReservation()%></td>
                 <td><%=user.getDailyQuantity()%></td>
-                <td><%=user.getPeapleQuantity()%></td>
+                <td><%=user.getPeapleQuantity()%></td>-->
                 <td><a
                         href="UserHandler?action=editform&userId=<%=user.getId()%>">Update</a></td>
                 <td><a
                         href="UserHandler?action=delete&userId=<%=user.getId()%>">Delete</a></td>
                 <td>
-                
+
             </tr>
             <%
                 }
-            //}
+                //}
             %>
         </table>
         <p><a href="UserHandler?action=insert">Add User</a></p>

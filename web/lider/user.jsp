@@ -37,7 +37,7 @@
                     <td>Estado</td>
                     <td><input type="text" name="state" /></td>
                 </tr>
-                <tr>
+<!--                <tr>
                     <td>Data do cadastro</td>
                     <td><input type="date" name="daterecord" /></td>
                 </tr><tr>
@@ -49,7 +49,7 @@
                 </tr><tr>
                     <td>Número de pessoas</td>
                     <td><input type="text" name="peaplequantity" /></td>
-                </tr>
+                </tr>-->
                 
                 
                     <td></td>
