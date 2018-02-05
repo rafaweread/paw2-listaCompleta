@@ -38,11 +38,11 @@
                 </li>-->
 
                 <li><a href="#"><i class="icon-user"></i><br />About</a>
-                    <ul class="sub-menu">
+<!--                    <ul class="sub-menu">
                         <li><a href="#"><i class="icon-plane"></i> Web</a></li>
                         <li><a href="#"><i class="icon-book"></i> Print</a></li>
                         <li><a href="#"><i class="icon-facetime-video"></i> Video</a></li>
-                    </ul>
+                    </ul>-->
                 </li>
 
                 <li><a href="#"><br />Sair</a></li>

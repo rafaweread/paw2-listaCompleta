@@ -21,7 +21,7 @@ public class UsuarioController {
             try
             {
              ConnectionProvider con = new ConnectionProvider();
-             String strsql="SELECT * FROM USUARIO WHERE USUARIO = ? and SENHA = ?;";       
+             String strsql="SELECT * FROM usuario WHERE usuario = ? and senha = ?;";       
              PreparedStatement stmt = con.getConnection().prepareStatement(strsql);
              stmt.setString(1, usuario.getUsuario());
              stmt.setString(2, usuario.getSenha());
