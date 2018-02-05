@@ -8,21 +8,31 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <link rel="icon" type="image/png" href="img/logo.png" />
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
         <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mask.min.js" type="text/javascript"></script>
         <link href="css/index.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript">
+		
+		$(document).ready(function(){
+			$('#datanascimento').mask('00/00/0000');
+		})
+        </script>
         <title>Edit User</title>
     </head>
     <body>
     <nav id="mainNav">
+        <img src="img/logo.png" style="float: left; height: 128px; width: 138px; margin: 15px 0px 0px 15px;"/>   
         <ul>
-            <li><a href="index.jsp"><i class="icon-home"></i><br />Home</a></li>
+            <li><a href="index.jsp">Início</a></li>
 
-                <li><a href="#"><i class="icon-cog"></i><br />Cadastro</a>
+                <li><a href="#">Cliente</a>
                     <ul class="sub-menu">
-                        <li><a href="user.jsp">Cliente</a></li>
+                        <li><a href="user.jsp">Cadastar</a></li>
                         <li><a href="listUser.jsp">Listar</a></li>
-                        <li><a href="edit.jsp">Alterar</a></li>
+<!--                        <li><a href="edit.jsp">Alterar</a></li>-->
                     </ul>
                 </li>
 
@@ -34,7 +44,7 @@
                 </ul>
             </li>-->
 
-            <li><a href="#"><i class="icon-user"></i><br />About</a>
+            <li><a href="#"><i class="icon-user"></i><br />Sobre</a>
 <!--                <ul class="sub-menu">
                     <li><a href="#"><i class="icon-plane"></i> Web</a></li>
                     <li><a href="#"><i class="icon-book"></i> Print</a></li>
@@ -42,9 +52,13 @@
                 </ul>-->
             </li>
 
-            <li><a href="#"><i class="icon-twitter"></i><br />Sair</a></li>
+            <li><a href="login.jsp"><i class="icon-twitter"></i><br />Sair</a></li>
         </ul><div class="clr"></div>
     </nav>
+    
+    <div>
+        <h1>Alterar Cadastro</h1>
+    </div>
     <%
         UserBean user = new UserBean();
     %>
@@ -55,7 +69,6 @@
 
         <input type="hidden" name="action" value="edit" /> 
 
-        <p><p>Alterar Cadastro de Cliente</p></p>
 
     <%
         String uid = request.getParameter("userId");
@@ -92,7 +105,7 @@
 
             <div class="form-group col-lg-2">
                 <label>Data Nascimento</label>
-                <input class="form-control" type="date" name="datanascimento" value="<%=user.getDatanascimento()%>" placeholder="" />
+                <input class="form-control" type="text" name="datanascimento" id="datanascimento" value="<%=user.getDatanascimento()%>" placeholder="" />
             </div> 
 
             <div class="form-group col-lg-6">
